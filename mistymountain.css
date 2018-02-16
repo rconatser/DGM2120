@@ -1,0 +1,96 @@
+/*---------- CSS RESET -----------*/
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*------ Box Model Fix Here ------*/
+* {
+    -mox-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*------------ HEADER ------------*/
+header {
+    padding: 10px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+header h1 a {
+    color: #00356E;
+    font-size: 36px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+header h1 a:hover {
+    color: #96C0ED;
+}
+
+header h2 {
+    color: #45596E;
+    font-size: 29px;
+}
+
+/*---------- NAVIGATION ----------*/
+nav.navbar {
+    background-color: #45596E;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav.navbar a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration-line: none;
+}
+
+nav.navbar a:hover {
+    color: #96C0ED;
+}
+
+/*------------- MAIN -------------*/
+main p, ul, ol, blockquote {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+main ol.services {
+    color: #333333;
+    list-style-type: square;
+    
+}
+
+main ul.contact {
+    color: #333333;
+    list-style-type: circle;
+}
+
+
+
+/*------------ FOOTER ------------*/
+footer {
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    text-align: center;
+    
+    background-color: #333333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/*------------- MISC -------------*/
