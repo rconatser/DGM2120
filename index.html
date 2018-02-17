@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="mistymountain.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
     <meta charset="UTF-8">
     <title>Home | MISTY MOUNTAIN PHOTOGRAPHY</title>
 </head>
@@ -15,20 +16,24 @@
     </header>
     
 <!-- START OF THE NAVIGATION -->
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="featured-hikes.html">Featured Hikes</a>
-            <a href="featured-hikes.html#lakeblanche">Lake Blanche</a> <!-- Will eventually become subnav of Featured hikes -->
-            <a href="featured-hikes.html#donutfalls">Donut Falls</a> <!-- Will eventually become subnav of Featured hikes -->
-        <a href="media.html">Media</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <nav>
+        <ul class="mainNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured-hikes.html">Featured Hikes</a></li>
+            <!-- Will eventually become subnav of Featured hikes -->
+                <li><a href="featured-hikes.html#lakeblanche">Lake Blanche</a></li>
+            <!-- Will eventually become subnav of Featured hikes -->
+                <li><a href="featured-hikes.html#donutfalls">Donut Falls</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="keepOpen"></div>
+     </nav>
     
 <!-- START OF THE MAIN CONTENT -->
     <main>
-        <h1>Home</h1>
-        <h2>Welcome to Misty Mountain Photography!</h2>
+        <h1 class="title">Welcome to Misty Mountain Photography</h1>
         
         <p>Here you’ll find images of my life here in Salt Lake City, Utah, and back home in Frisco, Texas. I’ve always been fond of the message that photography can convey. If you’d like me to photograph your next event or just want new photos, call me at <a href="tel:5555555555">(555) 555-5555</a> to set up an appointment. Let’s make time stand still!</p>
         
@@ -61,7 +66,19 @@
     
 <!-- START OF THE FOOTER -->
     <footer>
-        <p>&copy; 2018 &bull; MISTY MOUNTAIN PHOTOGRAPHY &bull; Built by Rachel Conatser</p>
+        <ul class="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured-hikes.html">Featured Hikes</a></li>
+            <!-- Will eventually become subnav of Featured hikes -->
+                <li><a href="featured-hikes.html#lakeblanche">Lake Blanche</a></li>
+            <!-- Will eventually become subnav of Featured hikes -->
+                <li><a href="featured-hikes.html#donutfalls">Donut Falls</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="keepOpen"></div>
+        <p>&copy; 2018 &bull; Misty Mountain Photography &bull; Built by Rachel Conatser</p>
     </footer>
     
 </body>

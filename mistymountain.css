@@ -3,6 +3,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
     padding: 0px;
     margin: 0px;
 }
+/*--------------------------------*/
 
 /*------ Box Model Fix Here ------*/
 * {
@@ -10,6 +11,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+/*--------------------------------*/
 
 /*------------ HEADER ------------*/
 header {
@@ -32,37 +34,74 @@ header h1 a:hover {
 header h2 {
     color: #45596E;
     font-size: 29px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
 }
+/*--------------------------------*/
 
 /*---------- NAVIGATION ----------*/
-nav.navbar {
+nav {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
     background-color: #45596E;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
-nav.navbar a {
-    font-family: 'Open Sans Condensed', sans-serif;
+nav ul.mainNav li {
+    float: left;
+    list-style-type: none;
+}
+
+nav ul.mainNav li.active {
+    background-color: #00356E;
+}
+
+nav ul.mainNav li a {
+    display: block;
+    padding: 8px 10px;
     color: #ffffff;
     font-size: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
     text-decoration-line: none;
 }
 
-nav.navbar a:hover {
+nav ul.mainNav li a:hover {
     color: #96C0ED;
+    background-color: #00356E;
 }
+
+.keepOpen {
+    clear: both;
+}
+/*--------------------------------*/
 
 /*------------- MAIN -------------*/
-main p, ul, ol, blockquote {
+main p, main ul, main ol, main blockquote {
     font-family: 'Open Sans Condensed', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-main h1, h2, h3, h4, h5, h6 {
+main h1, main h2, main h3, main h4, main h5, main h6 {
     font-family: 'Amatic SC', cursive;
     font-weight: lighter;
+    padding-left: 20px;
+}
+
+main h1.title {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+    text-align: center;
+    color: #333333;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 48px;
+    
+    /* Hero Image will go here */
+    margin: 5px;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    
 }
 
 main ol.services {
@@ -76,7 +115,7 @@ main ul.contact {
     list-style-type: circle;
 }
 
-
+/*--------------------------------*/
 
 /*------------ FOOTER ------------*/
 footer {
@@ -87,10 +126,38 @@ footer {
     text-align: center;
     
     background-color: #333333;
-    padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 20px;
-    padding-left: 20px;
 }
+
+footer ul.mainNav li {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: dimgray;
+    float: left;
+    list-style-type: none;
+    
+}
+
+footer ul.mainNav li.active {
+    background-color: RGB(0,53,110); /* same as #00356E */
+}
+
+footer ul.mainNav li a {
+    display: block;
+    
+    padding: 8px 10px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration-line: none;
+}
+
+footer ul.mainNav li a:hover {
+    color: #96C0ED;
+    background-color: #00356E;
+}
+
+.keepOpen {
+    clear: both;
+}
+/*--------------------------------*/
 
 /*------------- MISC -------------*/
