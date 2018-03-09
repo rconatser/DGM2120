@@ -44,11 +44,12 @@ nav {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
     background-color: #45596E;
+    text-align: center;
 }
 
 nav ul.mainNav li {
-    float: left;
     list-style-type: none;
+    display: inline-block;
 }
 
 nav ul.mainNav li.active {
@@ -77,15 +78,8 @@ nav ul.mainNav li a:hover {
     /* --- Images --- */
     div.headerImage {
         background-image: url("images/banner.jpg");
-        width: 100%;
-        height: 100%;
-        
-        /* Fixed image effect */
-        background-attachment: fixed;
-        background-position: top;
-        background-repeat:no-repeat;
         background-size: cover;
-        
+        margin-top: -16px;
         margin-bottom: 20px;
     }
 
@@ -103,6 +97,30 @@ nav ul.mainNav li a:hover {
         padding-bottom: 150px;
         font-size: 48px;    
     }
+
+figure.myPhotos {
+    float: right;
+    margin: 1em 12em 1em 1em;
+    padding: .5em .5em 1em .5em;
+    border: solid 1px;
+    border-color: #333;
+    background-color: white;
+    width: 20%;
+}
+
+figure.myPhotos img {
+    height: 100%;
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: .5em;
+    font-size: 1em;
+}
+
     /* -------------- */
 main p, main ul, main ol, main blockquote {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -149,19 +167,17 @@ footer {
 
 footer ul.mainNav li {
     font-family: 'Open Sans Condensed', sans-serif;
-    background-color: dimgray;
-    float: left;
+    display: inline-block;
     list-style-type: none;
-    
 }
 
 footer ul.mainNav li.active {
     background-color: RGB(0,53,110); /* same as #00356E */
 }
 
-footer ul.mainNav li a {
+footer ul.mainNav li a {    
     display: block;
-    
+    margin: 0px;
     padding: 8px 10px;
     color: #ffffff;
     font-size: 16px;
@@ -169,8 +185,8 @@ footer ul.mainNav li a {
 }
 
 footer ul.mainNav li a:hover {
-    color: #96C0ED;
-    background-color: #00356E;
+    color: #fff;
+    background-color: dimgray;
 }
 
 .keepOpen {
