@@ -171,10 +171,6 @@ footer ul.mainNav li {
     list-style-type: none;
 }
 
-footer ul.mainNav li.active {
-    background-color: RGB(0,53,110); /* same as #00356E */
-}
-
 footer ul.mainNav li a {    
     display: block;
     margin: 0px;
@@ -186,7 +182,11 @@ footer ul.mainNav li a {
 
 footer ul.mainNav li a:hover {
     color: #fff;
-    background-color: dimgray;
+    background-color: #666;
+}
+
+footer ul.mainNav li.active {
+    background-color: #666;
 }
 
 .keepOpen {
