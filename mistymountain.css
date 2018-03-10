@@ -14,28 +14,15 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /*--------------------------------*/
 
 /*------------ HEADER ------------*/
-header {
-    padding: 10px;
-    margin-left: 50px;
+
+header figure.logo {
     text-align: center;
+    margin: 0px;
+    width: 100%;
 }
 
-header h1 a {
-    color: #00356E;
-    font-size: 36px;
-    font-family: 'Amatic SC', cursive;
-    font-weight: lighter;
-}
-
-header h1 a:hover {
-    color: #96C0ED;
-}
-
-header h2 {
-    color: #45596E;
-    font-size: 29px;
-    font-family: 'Amatic SC', cursive;
-    font-weight: lighter;
+header figure.logo img {
+    width: 30%;
 }
 /*--------------------------------*/
 
