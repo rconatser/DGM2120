@@ -19,6 +19,7 @@ header figure.logo {
     text-align: center;
     margin: 0px;
     width: 100%;
+    padding-top: 10px;
 }
 
 header figure.logo img {
@@ -76,8 +77,6 @@ nav ul.mainNav li a:hover {
     }
 
     div.overlay h1.title {
-        font-family: 'Amatic SC', cursive;
-        font-weight: normal;
         text-align: center;
         color: #FFF;
         padding-top: 140px;
@@ -108,10 +107,24 @@ figcaption {
     font-size: 1em;
 }
 
+figure.myGallery {
+    margin: 3em 2em;
+    padding: .5em .5em 1em .5em;
+    border: solid 1px;
+    border-color: #333;
+    background-color: white;
+    width: 20%;
+}
+
+figure.myGallery img {
+    height: 100%;
+    width: 100%;
+}
+
     /* -------------- */
 main p, main ul, main ol, main blockquote {
     font-family: 'Open Sans Condensed', sans-serif;
-    padding: 20px 50px;
+    padding: 1.5em 8em;
 }
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
@@ -129,13 +142,55 @@ main ul.contact {
     list-style-type: circle;
 }
 
-main #contactMe, main #services, main #mastermind {
+main .interiorHeading {
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 35px;
-    background-color: #00356E;
+    background-color: #45596E;
     margin: 0px;
+}
+
+main .contactInfoBox {
+    background-color: #7597BA;
+    display: block;
+    margin: 2em 10em;
+    padding: 10px 10px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+main .contactHeading {
+    color: white;
+    font-size: 30px;
+}
+
+main .contactInfoBox a {
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main .far, main .fas {
+    padding: 5px 0px;
+    color: white;
+    font-size: 48px;
+}
+
+main .titleInterior, main .subtitleInterior { /* WILL NEED TO PUT BACKGROUND IMAGE */
+    margin: -17px;
+    text-align: center;
+    background-color: #00356E;
+    color: white;
+}
+
+main .titleInterior {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 48px;    
+}
+
+main .subtitleInterior {
+    padding-bottom: 70px;
 }
 
 /*--------------------------------*/
