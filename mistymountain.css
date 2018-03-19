@@ -247,11 +247,35 @@ footer ul.mainNav li.active {
 
 /*------------- MISC -------------*/
 @media only screen and (max-width: 1024px) {
-    
+    figure.myGallery {
+    float: left;
+    margin: 3rem 2rem;
+    border: solid 1px;
+    border-color: #333;
+    background-color: white;
+    width: 40%;
+}
+
+figure.myGallery img {
+    padding: .8em;
+    width: 100%;
+}
 }
 
 
 @media only screen and (max-width: 768px) {
-    
+    figure.myGallery {
+    float: left;
+    margin: 3rem 2rem;
+    border: solid 1px;
+    border-color: #333;
+    background-color: white;
+    width: 100%;
+}
+
+figure.myGallery img {
+    padding: .8em;
+    width: 100%;
+}
 }
 }
