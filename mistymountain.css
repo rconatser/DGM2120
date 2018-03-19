@@ -121,12 +121,16 @@ figure.myGallery {
     border: solid 1px;
     border-color: #333;
     background-color: white;
-    width: 29%;
+    width: 20%;
 }
 
 figure.myGallery img {
     padding: .8em;
     width: 100%;
+}
+
+.media {
+    margin: 3rem 5rem;
 }
 
     /* -------------- */
