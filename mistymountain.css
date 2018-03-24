@@ -208,6 +208,22 @@ main .subtitleInterior {
     padding-bottom: 70px;
 }
 
+main h1.sent-text {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #FFF;
+    background-color: slategray;
+    margin-top: -16px;
+}
+
+main h2.sent-text {
+    text-align: center;
+    padding-bottom: 50px;
+    color: #FFF;
+    background-color: slategray;
+    margin-bottom: -20px;
+}
 
 /*--------------------------------*/
 
