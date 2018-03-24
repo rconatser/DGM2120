@@ -213,18 +213,26 @@ main h1.sent-text {
     padding-top: 50px;
     padding-bottom: 20px;
     color: #FFF;
-    background-color: slategray;
-    margin-top: -16px;
+    background-color: rgba(255,255,255, .2);
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
 }
 
 main h2.sent-text {
     text-align: center;
     padding-bottom: 50px;
     color: #FFF;
-    background-color: slategray;
-    margin-bottom: -20px;
+    background-color: rgba(255,255,255, .2);
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
 }
 
+main .message {
+    margin-top: -16px;
+    margin-bottom: -18px;
+    padding: 3% 22%;
+    background-color: #00356E;
+}
 /*--------------------------------*/
 
 /*------------ FOOTER ------------*/
