@@ -46,50 +46,51 @@
             <i class="far fa-envelope"></i><h3 class="contactHeading"> Email: </h3><a href="mailto:none@none.com" class="contactInfo"><strong>none@none.com</strong></a>
         </span>
         
-        <form action="https://formspree.io/10806252@my.uvu.edu" method="POST" enctype="multipart/form-data" name="">
+        <form action="https://formspree.io/10806252@my.uvu.edu" method="POST" enctype="multipart/form-data" name="" class="contact-form">
             <fieldset>
                 <legend>Your Name</legend>
-                <label>First Name:<input name="first" value="" type="text" placeholder="First Name" required></label>
-                <label>Last Name:<input name="last" value="" type="text" placeholder="Last Name" required></label>
+                <label><span class="form">First Name:</span><input name="first" value="" type="text" placeholder="First Name" class="input-style" required></label>
+                <label><span class="form">Last Name:</span><input name="last" value="" type="text" placeholder="Last Name"  class="input-style"required></label>
             </fieldset>
             
             <fieldset>
                 <legend>Contact Information</legend>
-                <label>Email:<input name="email" value="" type="email" placeholder="none@none.com" required></label>
-                <label><input name="checkbox" value="yes" type="checkbox">Yes, I like to receive email updates with news and promotions.</label>
-                <label>Phone:<input name="phone" value="" type="tel" placeholder="1234567890" required pattern="[0-9]{10}"></label>
+                <label><span class="form">Email:</span><input name="email" value="" type="email" placeholder="none@none.com" class="input-style" required></label>
+                <label><input name="checkbox" value="yes" type="checkbox" class="checkmark"><span class="form-email-updates">Yes, I like to receive email updates with news and promotions.</span></label>
+                <label><span class="form">Phone:</span><input name="phone" value="" type="tel" placeholder="1234567890" required pattern="[0-9]{10}" class="input-style"></label>
             </fieldset>
             
             <fieldset>          
                 <legend>Additional Information</legend>
                 <label>
-                What service are you most interested in receiving?
-                <select name="service" required>
-                    <option value="family">Family Portraits</option>
-                    <option value="self">Self Portraits</option>
-                    <option value="newborn">Newborn Photos</option>
-                    <option value="wedding">Wedding Photos</option>
-                    <option value="graduation">Graduation Photos</option>
+                <span class="form">What service are you most interested in receiving?</span>
+                <select name="service" class="input-style" required>
+                    <option value="none">Not Applicable</option>
+                    <option value="family-portraits">Family Portraits</option>
+                    <option value="self-portraits">Self Portraits</option>
+                    <option value="newborn-photos">Newborn Photos</option>
+                    <option value="wedding-photos">Wedding Photos</option>
+                    <option value="graduation-photos">Graduation Photos</option>
                 </select>
                 </label>
                 
-                What is the best way to contact you?
-                <label><input type="checkbox" name="mail" value="Email">Email</label>
-                <label><input type="checkbox" name="tel" value="Phone">Phone</label>
+                <span class="form">What is the best way to contact you?</span>
+                <label><input type="checkbox" name="mail" value="Email" class="checkmark">Email</label>
+                <label><input type="checkbox" name="tel" value="Phone" class="checkmark">Phone</label>
                 
-                What is the best time of day to contact you?
-                <label><input type="radio" name="time" value="day">Day (8am-5pm)</label>
-                <label><input type="radio" name="time" value="night">Night (5pm-8pm)</label>
-                <label><input type="radio" name="time" value="both">Both (8am-8pm)</label>
+                <span class="form">What is the best time of day to contact you?</span>
+                <label><input type="radio" name="time" value="day" class="radio">Day (8am-5pm)</label>
+                <label><input type="radio" name="time" value="night" class="radio">Night (5pm-8pm)</label>
+                <label><input type="radio" name="time" value="both" class="radio">Both (8am-8pm)</label>
                 
-                <label>Questions, comments, or concerns?
-                <textarea name="message" placeholder="Questions, comments, or concerns?"></textarea></label>
+                <label><span class="form">Any questions, comments, or concerns?</span>
+                <textarea name="message" placeholder="Questions, comments, or concerns?" class="form-message"></textarea></label>
             </fieldset>  
         
             <input type="hidden" name="_subject" value="Message from Website">
             <input type="hidden" name="_next" value="http://rconatser.com/sent.html">
             
-            <input type="submit" name="submit" value="Contact Me">
+            <input type="submit" name="submit" value="Contact Me" class="form-button">
         
         </form>
     </main>

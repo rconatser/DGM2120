@@ -233,6 +233,79 @@ main .message {
     padding: 3% 22%;
     background-color: #00356E;
 }
+
+/* --- CONTACT PAGE (FORM) --- */
+main form.contact-form fieldset {
+    margin: 1rem 10%;
+    padding: 2rem 10%;
+    border-radius: 20px;
+    background-color: #e9e9e9;
+    border: none;
+    
+}
+
+main form.contact-form legend {
+    font-size: 1rem !important;
+    font-family: 'Amatic SC', cursive;
+    color: #333;
+}
+
+main form.contact-form label {
+    display: block;
+    color: #45596E;
+}
+
+main form.contact-form span.form {
+    display: block;
+    padding-top: 1rem;
+    color: #00356E;
+}
+
+main .form-email-updates {
+    color: #333 !important;
+    font-size: 14px;
+}
+
+main form.contact-form, .form-message, select, input {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00356E;
+}
+
+main .form-button {
+    padding: .5rem 2rem;
+    margin: .5rem 10%;
+    background-color: #00356E;
+    border: 1px solid #00356E !important;
+    font-family: 'Amatic SC', cursive !important;
+    font-size: 1.2rem;
+    color: #FFF;
+    border-radius: 30px;
+}
+
+main .form-button:hover{
+    background-color: #45596E;
+    border: 1px solid #45596E !important;
+    color: #FFF;
+}
+
+main .input-style, .form-message {
+    border: none;
+    border-bottom: 1px solid #00356E;
+    border-radius: 20px;
+    margin-top: .2rem !important;
+    color: #333;
+    background-color: rgba(255,255,255, .7);
+    padding: .5rem;
+    width: 100%;
+    
+}
+
+main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:focus {
+    border: none;
+    border-bottom: 1px solid #7597BA;
+}
 /*--------------------------------*/
 
 /*------------ FOOTER ------------*/
