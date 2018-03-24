@@ -53,38 +53,6 @@
                 <label>Last Name:<input name="last" value="" type="text" placeholder="Last Name" required></label>
             </fieldset>
             
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label>Email:<input name="email" value="" type="email" placeholder="none@none.com" required></label>
-                <label><input name="checkbox" value="yes" type="checkbox">Yes, I like to receive email updates with news and promotions.</label>
-                <label>Phone:<input name="phone" value="" type="tel" placeholder="1234567890" required pattern="[0-9]{10}"></label>
-            </fieldset>
-            
-            <fieldset>          
-                <legend>Additional Information</legend>
-                <label>
-                What service are you most interested in receiving?
-                <select name="service" required>
-                    <option value="family">Family Portraits</option>
-                    <option value="self">Self Portraits</option>
-                    <option value="newborn">Newborn Photos</option>
-                    <option value="wedding">Wedding Photos</option>
-                    <option value="graduation">Graduation Photos</option>
-                </select>
-                </label>
-                
-                What is the best way to contact you?
-                <label><input type="checkbox" name="mail" value="Email">Email</label>
-                <label><input type="checkbox" name="tel" value="Phone">Phone</label>
-                
-                What is the best time of day to contact you?
-                <label><input type="radio" name="time" value="day">Day (8am-5pm)</label>
-                <label><input type="radio" name="time" value="night">Night (5pm-8pm)</label>
-                <label><input type="radio" name="time" value="both">Both (8am-8pm)</label>
-                
-                <label>Questions, comments, or concerns?
-                <textarea name="message" placeholder="Questions, comments, or concerns?"></textarea></label>
-            </fieldset>  
         
             <input type="hidden" name="subject" value="Message from Website">
             <input type="hidden" name="redirect" value="sent.html">
