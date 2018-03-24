@@ -38,19 +38,19 @@
         <h1 class="titleInterior">Contact</h1>
         <h2 class="subtitleInterior">Let's Keep in Touch!</h2>
         
-        <span class="contactInfoBox">
+        <div class="contactInfoBox">
             <i class="fas fa-mobile-alt"></i><h3 class="contactHeading"> Phone: </h3><a href="tel:5555555555" class="contactInfo"><strong>(555) 555-5555</strong></a>
-        </span>
-
-        <span class="contactInfoBox">
-            <i class="far fa-envelope"></i><h3 class="contactHeading"> Email: </h3><a href="mailto:none@none.com" class="contactInfo"><strong>none@none.com</strong></a>
-        </span>
+        </div>
         
-        <form action="https://formspree.io/10806252@my.uvu.edu" method="POST" enctype="multipart/form-data" name="" class="contact-form">
+        <div class="contactInfoBox">
+            <i class="far fa-envelope"></i><h3 class="contactHeading"> Email: </h3><a href="mailto:none@none.com" class="contactInfo"><strong>none@none.com</strong></a>
+        </div>
+        
+        <form action="https://formspree.io/10806252@my.uvu.edu" method="POST" enctype="multipart/form-data" name="contact-form" class="contact-form">
             <fieldset>
                 <legend>Your Name</legend>
                 <label><span class="form">First Name:</span><input name="first" value="" type="text" placeholder="First Name" class="input-style" required></label>
-                <label><span class="form">Last Name:</span><input name="last" value="" type="text" placeholder="Last Name"  class="input-style"required></label>
+                <label><span class="form">Last Name:</span><input name="last" value="" type="text" placeholder="Last Name"  class="input-style" required></label>
             </fieldset>
             
             <fieldset>
@@ -64,13 +64,13 @@
                 <legend>Additional Information</legend>
                 <label>
                 <span class="form">What service are you most interested in receiving?</span>
-                <select name="service" class="input-style" required>
-                    <option value="none">Not Applicable</option>
+                <select name="service" class="input-style" size="6" required>
                     <option value="family-portraits">Family Portraits</option>
                     <option value="self-portraits">Self Portraits</option>
                     <option value="newborn-photos">Newborn Photos</option>
                     <option value="wedding-photos">Wedding Photos</option>
                     <option value="graduation-photos">Graduation Photos</option>
+                    <option value="not-applicable">None of the Above</option>
                 </select>
                 </label>
                 
