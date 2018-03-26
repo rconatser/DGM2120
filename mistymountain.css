@@ -76,16 +76,23 @@ nav ul.mainNav li a:hover {
 
     div.overlay {
         width: 100%;
-        background-color: rgba(51, 51, 51, .5);
+        background-color: rgba(0,0,0, .7);
     }
 
     div.overlay h1.title {
         text-align: center;
         color: #FFF;
-        padding-top: 140px;
-        padding-bottom: 150px;
+        padding-top: 151px;
+        padding-bottom: 162px;
         font-size: 48px;    
     }
+
+div.banner-interior {
+    background-image: url("images/background-interior-pages.jpg");
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
 
 figure.myPhotos {
     float: right;
@@ -139,7 +146,8 @@ figure.myGallery img {
     /* -------------- */
 main p, main ul, main ol, main blockquote {
     font-family: 'Open Sans Condensed', sans-serif;
-    padding: 1.5em 8em;
+    margin: 1.5rem 10%;
+    padding: 1.5rem 10%;
 }
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
@@ -164,6 +172,10 @@ main .interiorHeading {
     font-size: 35px;
     background-color: #45596E;
     margin: 0px;
+}
+
+main .interiorHeading#lakeblanche {
+    margin-top: -21px !important;
 }
 
 main .contactInfoBox {
@@ -191,21 +203,20 @@ main .far, main .fas {
     font-size: 48px;
 }
 
-main .titleInterior, main .subtitleInterior { /* WILL NEED TO PUT BACKGROUND IMAGE */
-    margin: -17px;
+main .titleInterior, main .subtitleInterior {
+    margin: -16px;
     text-align: center;
-    background-color: #00356E;
     color: white;
 }
 
 main .titleInterior {
-    padding-top: 50px;
+    padding-top: 140px;
     padding-bottom: 10px;
     font-size: 48px;    
 }
 
 main .subtitleInterior {
-    padding-bottom: 70px;
+    padding-bottom: 150px;
 }
 
 main h1.sent-text {
@@ -229,10 +240,13 @@ main h2.sent-text {
 
 main .message {
     margin-top: -16px;
-    margin-bottom: -18px;
+    margin-bottom: -16px;
+    margin-bottom: -20px;
     padding: 3% 22%;
-    background-color: #00356E;
+    background-image: url(images/background-interior-pages.jpg);
+    background-size: cover;
 }
+
 
 /* --- CONTACT PAGE (FORM) --- */
 main form.contact-form fieldset {
@@ -381,4 +395,5 @@ figure.myGallery img {
     padding: .8em;
     width: 100%;
 }
+    
 }
