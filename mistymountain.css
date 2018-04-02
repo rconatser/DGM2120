@@ -15,15 +15,37 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 /*------------ HEADER ------------*/
 
-header figure.logo {
+
+header {
+    padding-top: 10rem;
+    background-image: url("images/MistyMounainLogo.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+header h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
     text-align: center;
-    margin: 0px;
-    width: 100%;
-    padding-top: 10px;
+    margin-top: -10px;
+    font-size: 2rem;
+    color: #00356E;
+    text-decoration: underline;
 }
 
-header figure.logo img {
-    width: 25%;
+
+header h1:hover {
+    color: #45596E !important;
+}
+
+header h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    margin-top: -8px;
+    font-size: 1.6rem;
+    color: grey;
 }
 /*--------------------------------*/
 
@@ -67,6 +89,15 @@ nav ul.mainNav li a:hover {
 
 /*------------- MAIN -------------*/
     /* --- Images --- */
+main {
+    background-image: URL("images/backgroundgradient.gif");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: bottom;
+    margin-bottom: -24px;
+    box-shadow: 0px 10px 10px #000 inset;
+}
+
     div.headerImage {
         background-image: url("images/banner.jpg");
         background-size: cover;
@@ -98,10 +129,10 @@ figure.myPhotos {
     float: right;
     margin: 1em 12em 1em 1em;
     padding: .5em .5em 1em .5em;
-    border: solid 1px;
-    border-color: #333;
     background-color: white;
     width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(51,51,51,.2);
 }
 
 figure.myPhotos img {
@@ -128,15 +159,16 @@ figcaption {
 figure.myGallery {
     float: left;
     margin: 3rem 2rem;
-    border: solid 1px;
-    border-color: #333;
     background-color: white;
-    width: 20%;
+    width: 43%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(51,51,51,.2);
 }
 
 figure.myGallery img {
     padding: .8em;
     width: 100%;
+    
 }
 
 .media {
@@ -171,7 +203,7 @@ main .interiorHeading {
     padding: 20px;
     font-size: 35px;
     background-color: #45596E;
-    margin: 0px;
+    width: 100%;
 }
 
 main .interiorHeading#lakeblanche {
@@ -182,7 +214,7 @@ main .contactInfoBox {
     background-color: #7597BA;
     display: block;
     margin: 2em 10em;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
     border-radius: 100px;
     text-align: center;
 }
@@ -289,7 +321,7 @@ main form.contact-form, .form-message, select, input {
 
 main .form-button {
     padding: .5rem 2rem;
-    margin: .5rem 10%;
+    margin: .5rem 10% 3rem 10%;
     background-color: #00356E;
     border: 1px solid #00356E !important;
     font-family: 'Amatic SC', cursive !important;
@@ -320,6 +352,46 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     border: none;
     border-bottom: 1px solid #7597BA;
 }
+
+.wrapper {
+    min-width: 200px !important;
+    max-width: 1100px !important;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.95);
+    margin-top: -24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
+    text-shadow: 1px 1px 2px rgba(51,51,51,.2);
+}
+
+.wrapper-media {
+    min-width: 200px !important;
+    max-width: 1100px !important;
+    margin: 0 auto;
+    margin-top: -20px;
+    background-color: rgba(255,255,255,.95);
+    padding-top: 1rem;
+    padding-bottom: 133%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
+    text-shadow: 1px 1px 2px rgba(51,51,51,.2);
+}
+
+.wrapper-contact {
+    min-width: 200px !important;
+    max-width: 1100px !important;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.95);
+    margin-top: -20px;
+    padding-top: 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
+    text-shadow: 1px 1px 2px rgba(51,51,51,.2);
+}
+
 /*--------------------------------*/
 
 /*------------ FOOTER ------------*/
@@ -332,6 +404,7 @@ footer {
     
     background-color: #333333;
     padding-bottom: 5px;
+    margin-top: 1rem;
 }
 
 footer ul.mainNav li {
@@ -361,12 +434,17 @@ footer ul.mainNav li.active {
 .keepOpen {
     clear: both;
 }
+
+footer.contact-footer {
+    padding-top: 0px !important;
+    margin-top: 24px !important;
+}
 /*--------------------------------*/
 
 /*------------- MISC -------------*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     figure.myGallery {
-    float: left;
+    text-align: center;
     margin: 3rem 2rem;
     border: solid 1px;
     border-color: #333;
@@ -382,13 +460,19 @@ figure.myGallery img {
 
 
 @media only screen and (max-width: 768px) {
+    figure.myPhotos {
+        float: none;
+        text-align: center !important;
+        width: 100% !important;
+    }
+    
     figure.myGallery {
-    float: left;
-    margin: 3rem 2rem;
+    text-align: center;
+    margin: 1rem 1rem;
     border: solid 1px;
     border-color: #333;
     background-color: white;
-    width: 100%;
+    width: 100% !important;
 }
 
 figure.myGallery img {
