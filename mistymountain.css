@@ -35,7 +35,7 @@ header h1 {
 
 
 header h1:hover {
-    color: #45596E !important;
+    color: #7597BA !important;
 }
 
 header h2 {
@@ -50,6 +50,7 @@ header h2 {
 /*--------------------------------*/
 
 /*---------- NAVIGATION ----------*/
+@media only screen and (min-width: 1025px) {
 nav {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
@@ -82,6 +83,7 @@ nav ul.mainNav li a:hover {
     border-bottom: 5px solid #aaa;
 }
 
+}
 .keepOpen {
     clear: both;
 }
@@ -103,6 +105,7 @@ main {
         background-size: cover;
         margin-top: -16px;
         margin-bottom: 20px;
+        box-shadow: 20px 20px 200px #333 inset;
     }
 
     div.overlay {
@@ -120,6 +123,7 @@ main {
 
 div.banner-interior {
     background-image: url("images/background-interior-pages.jpg");
+    box-shadow: 20px 20px 200px #000 inset;
     background-size: cover;
     margin-bottom: 20px;
 }
@@ -158,7 +162,7 @@ figcaption {
 
 figure.myGallery {
     float: left;
-    margin: 3rem 2rem;
+    margin: 3% 3%;
     background-color: white;
     width: 43%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -167,18 +171,13 @@ figure.myGallery {
 
 figure.myGallery img {
     padding: .8em;
-    width: 100%;
-    
+    width: 100%;   
 }
 
-.media {
-    margin: 3rem 5rem;
-}
 
     /* -------------- */
 main p, main ul, main ol, main blockquote {
     font-family: 'Open Sans Condensed', sans-serif;
-    margin: 1.5rem 10%;
     padding: 1.5rem 10%;
 }
 
@@ -187,9 +186,24 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     font-weight: normal; 
 }
 
-main ol.services {
+
+main ol.services, ul.contact {
+    background-image: url(images/paper2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3% 0 2% 38%;
     color: #333333;
-    list-style-type: square;
+    list-style-type: circle;
+}
+
+main ol.services li, ul.contact li {
+    margin-top: -1.6em;
+    font-size: 1.5em;
+    padding: 1em;
+}
+main p.services, main p.top {
+    text-align: center;
 }
 
 main ul.contact {
@@ -207,7 +221,7 @@ main .interiorHeading {
 }
 
 main .interiorHeading#lakeblanche {
-    margin-top: -21px !important;
+    margin-top: -19px !important;
 }
 
 main .contactInfoBox {
@@ -358,7 +372,7 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     max-width: 1100px !important;
     margin: 0 auto;
     background-color: rgba(255,255,255,.95);
-    margin-top: -24px;
+    margin-top: -20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
@@ -372,7 +386,7 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     margin-top: -20px;
     background-color: rgba(255,255,255,.95);
     padding-top: 1rem;
-    padding-bottom: 133%;
+    padding-bottom: 155rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
@@ -401,8 +415,7 @@ footer {
     font-family: 'Amatic SC', cursive;
     font-size: 18px;
     text-align: center;
-    
-    background-color: #333333;
+    background-color: #333;
     padding-bottom: 5px;
     margin-top: 1rem;
 }
@@ -435,49 +448,220 @@ footer ul.mainNav li.active {
     clear: both;
 }
 
-footer.contact-footer {
+footer.page-footer {
     padding-top: 0px !important;
     margin-top: 24px !important;
 }
-/*--------------------------------*/
+/*-------------------------------------------------*/
 
-/*------------- MISC -------------*/
+/*------------- MISC/NAVIGATION RULES -------------*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    figure.myGallery {
-    text-align: center;
-    margin: 3rem 2rem;
-    border: solid 1px;
-    border-color: #333;
+    main ol.services, ul.contact {
+        padding: 1em 0px 1em 30% !important;
+    }
+    
+    .wrapper, .wrapper-contact, .wrapper-media {
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+    
+    .wrapper-media {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .keepOpen {
+        clear: both;
+    } 
+    
+    figure.myPhotos {
+        float: none;
+        margin: 1rem auto;
+        width: 30%;
+    }
+    
+    
+figure.myGallery {
+    float: none !important;
     background-color: white;
-    width: 40%;
+    margin: 1rem auto;
+    width: 60%;
 }
 
 figure.myGallery img {
     padding: .8em;
     width: 100%;
 }
+    
+nav {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(#45596E, #28333f);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+nav ul.mainNav {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav ul.mainNav li.active {
+    background-color: #00356E;
+}
+
+nav ul.mainNav li a {
+    display: block;
+    padding: 10px 10px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration-line: none;
+
+}
+
+nav ul.mainNav li a:hover {
+    color: #96C0ED;
+    background-color: #00356E;
+}
+    
+/*---FOOTER NAVIGATION---*/
+    footer {
+        background-color: #1a1a1a;
+    }
+    
+    footer ul.mainNav{
+        padding: 0px;
+        list-style-type: none;
+        background: linear-gradient(#333, #1a1a1a);
+    }
+    
+     footer ul.mainNav li {
+        font-family: 'Open Sans Condensed', sans-serif;
+        display: block;
+    }
+
+    footer ul.mainNav li.active {
+        background-color: #666;
+    }
+
+    footer ul.mainNav li a {
+        display: block;
+        padding: 10px 10px;
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration-line: none;
+
+    }
+
+    footer ul.mainNav li a:hover {
+        color: #fff;
+        background-color: #666;
+    }
+/*-----------------------*/
 }
 
 
 @media only screen and (max-width: 768px) {
+    main ol.services, ul.contact {
+        padding: 1em 15% 1em 20% !important;
+    }
+    
+    .wrapper, .wrapper-contact, .wrapper-media {
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+    
+    .wrapper-media {
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .keepOpen {
+        clear: both;
+    }
+    
+    nav {
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        background: linear-gradient(#45596E, #28333f);
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    nav ul.mainNav {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    nav ul.mainNav li.active {
+        background-color: #00356E;
+    }
+
+    nav ul.mainNav li a {
+        display: block;
+        padding: 10px 10px;
+        color: #ffffff;
+        font-size: 18px;
+        text-decoration-line: none;
+
+    }
+
+    nav ul.mainNav li a:hover {
+        color: #96C0ED;
+        background-color: #00356E;
+    }
+    
+/*---FOOTER NAVIGATION---*/
+    footer {
+        background-color: #1a1a1a;
+    }
+    
+    footer ul.mainNav{
+        padding: 0px;
+        list-style-type: none;
+        background: linear-gradient(#333, #1a1a1a);
+    }
+    
+     footer ul.mainNav li {
+        font-family: 'Open Sans Condensed', sans-serif;
+        display: block;
+    }
+
+    footer ul.mainNav li.active {
+        background-color: #666;
+    }
+
+    footer ul.mainNav li a {
+        display: block;
+        padding: 10px 10px;
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration-line: none;
+
+    }
+
+    footer ul.mainNav li a:hover {
+        color: #fff;
+        background-color: #666;
+    }
+/*-----------------------*/
+    
     figure.myPhotos {
         float: none;
-        text-align: center !important;
-        width: 100% !important;
+        margin: 1rem auto;
+        width: 75%;
     }
     
     figure.myGallery {
-    text-align: center;
-    margin: 1rem 1rem;
-    border: solid 1px;
-    border-color: #333;
-    background-color: white;
-    width: 100% !important;
-}
+        float: none;
+        background-color: white;
+        margin: 1rem auto;
+        width: 100%;
+    }
 
-figure.myGallery img {
-    padding: .8em;
-    width: 100%;
-}
+    figure.myGallery img {
+        padding: .8em;
+        width: 100%;
+    }
     
 }
