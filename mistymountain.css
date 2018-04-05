@@ -76,6 +76,7 @@ nav ul.mainNav li a {
     text-decoration-line: none;
     border-bottom: 5px solid #45596E;
     padding-top: 12px;
+    transition: 0.3s;
 }
 
 nav ul.mainNav li a:hover {
@@ -195,11 +196,12 @@ main ol.services, ul.contact {
     padding: 3% 0 2% 38%;
     color: #333333;
     list-style-type: circle;
+    box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
 }
 
 main ol.services li, ul.contact li {
     margin-top: -1.6em;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding: 1em;
 }
 main p.services, main p.top {
@@ -231,6 +233,7 @@ main .contactInfoBox {
     padding: 1rem 1rem;
     border-radius: 100px;
     text-align: center;
+    min-width: 50%;
 }
 
 main .contactHeading {
@@ -238,9 +241,13 @@ main .contactHeading {
     font-size: 30px;
 }
 
-main .contactInfoBox a {
+main .contactInfoBox a, main .contactInfoBox p {
     color: white;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main .contactInfoBox p {
+    padding: 0px;
 }
 
 main .far, main .fas {
@@ -341,13 +348,14 @@ main .form-button {
     font-family: 'Amatic SC', cursive !important;
     font-size: 1.2rem;
     color: #FFF;
-    border-radius: 30px;
+    transition: 0.3s;
 }
 
 main .form-button:hover{
     background-color: #45596E;
     border: 1px solid #45596E !important;
     color: #FFF;
+    border-radius: 30px;
 }
 
 main .input-style, .form-message {
@@ -386,7 +394,7 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     margin-top: -20px;
     background-color: rgba(255,255,255,.95);
     padding-top: 1rem;
-    padding-bottom: 155rem;
+    padding-bottom: 50px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
@@ -404,6 +412,105 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     border-bottom-right-radius: 20px;
     box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
     text-shadow: 1px 1px 2px rgba(51,51,51,.2);
+}
+
+main .donutfallsmap, main .lakeblanchemap, main .schoolmap {
+    width: 99.9%;
+    padding-left: 0.005%;
+    height: 200px;
+    border: none;
+}
+
+
+main .video {
+    width: 60%;
+    margin: 1rem 20%;
+    height: 400px;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
+}
+
+main button {
+    padding: .75em 3em;
+    margin-left: 10%;
+    margin-bottom: 2em;
+    color: white;
+    background-color: #46456e; /* purple color */
+    border: 2px solid #46456e;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1em !important;
+}
+
+main .top button, .services button{
+    margin-left: 0px !important;
+}
+
+main .topabout button {
+    margin-left: 0px;
+}
+
+main button:hover {
+    color: #46456e;
+    background-color: rgba(255,255,255,0);
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+audio {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2em;
+    box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
+}
+
+main .brochure, .brochure-media {
+    background-color: #7597BA;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    color: white;
+    padding-bottom: 0px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.brochure-media {
+    margin-top: 3em;
+    margin-bottom: -2.9em;
+}
+
+table.pricing {
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgba(168,189,212,.6);
+    width: 100%;
+}
+
+table.pricing th {
+    font-weight: lighter;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    color: white;
+    background-color: #46456e;
+}
+
+table.pricing th {
+    padding: .45em 0em;
+}
+
+table.pricing tr:nth-child(odd){
+    background-color: rgba(100,99,157,.4);
+}
+
+table.pricing td {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: .6em;
+}
+
+table.pricing tr:hover {
+    background-color: #00356E;
+    color: white;
 }
 
 /*--------------------------------*/
@@ -433,6 +540,7 @@ footer ul.mainNav li a {
     color: #ffffff;
     font-size: 16px;
     text-decoration-line: none;
+    transition: 0.3s;
 }
 
 footer ul.mainNav li a:hover {
@@ -460,9 +568,39 @@ footer.page-footer {
         padding: 1em 0px 1em 30% !important;
     }
     
-    .wrapper, .wrapper-contact, .wrapper-media {
+    .wrapper, .wrapper-contact, .wrapper-media, .brochure, .brochure-media {
         border-bottom-left-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
+    }
+    
+    .brochure, .brochure-media {
+        padding-bottom: 1em !important;
+        text-align: center;
+    }
+    
+    .brochure-media {
+        margin-right: -1.5em;
+        margin-left: -1.5em;
+        padding-bottom: 2em !important;
+    }
+
+    
+    .brochure button, .brochure-media button {
+        display: block;
+        font-size: 1em !important;
+        margin-bottom: 1em;
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    .brochure a {
+        text-decoration: none;
+    }
+    
+    .brochure a:hover {
+        text-decoration: none;
     }
     
     .wrapper-media {
@@ -472,7 +610,7 @@ footer.page-footer {
 
     .keepOpen {
         clear: both;
-    } 
+    }
     
     figure.myPhotos {
         float: none;
@@ -524,6 +662,8 @@ nav ul.mainNav li a:hover {
     background-color: #00356E;
 }
     
+
+    
 /*---FOOTER NAVIGATION---*/
     footer {
         background-color: #1a1a1a;
@@ -566,9 +706,39 @@ nav ul.mainNav li a:hover {
         padding: 1em 15% 1em 20% !important;
     }
     
-    .wrapper, .wrapper-contact, .wrapper-media {
+    .wrapper, .wrapper-contact, .wrapper-media, .brochure, .brochure-media {
         border-bottom-left-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
+    }
+    
+    .brochure, .brochure-media {
+        padding-bottom: 1em !important;
+        text-align: center;
+    }
+    
+    .brochure-media {
+        margin-right: -1.5em;
+        margin-left: -1.5em;
+        padding-bottom: 2em !important;
+    }
+
+    
+    .brochure button, .brochure-media button {
+        display: block;
+        font-size: 1em !important;
+        margin-bottom: 1em;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    .brochure a, .brochure-media a {
+        text-decoration: none;
+    }
+    
+    .brochure a:hover, .brochure-media a:hover {
+        text-decoration: none;
     }
     
     .wrapper-media {
