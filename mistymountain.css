@@ -440,6 +440,7 @@ main button {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
     font-size: 1em !important;
+    transition: 0.3s;
 }
 
 main .top button, .services button{
